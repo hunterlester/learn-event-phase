@@ -21,7 +21,9 @@
       // add 'true' as the third argument to
       // addEventListner to enable event capturing over bubbling
       elem.addEventListener('click', function(e) {
-          console.log(elem.id);
+          // console.log(elem.id);
+          console.log(e.currentTarget);
+          // e.stopPropagation()
       })
     })
   </script>
